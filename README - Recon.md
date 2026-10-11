@@ -11,7 +11,9 @@ install.packages(c("forecast", "FoReco", "FoRecoML", "ggplot2",
 
 3. In RStudio, open the script, set the working directory to that folder
    (*Session > Set Working Directory > To Source File Location*) and run everything
-   (*Ctrl/Cmd + Alt + R*).
+   (*Ctrl/Cmd + Alt + R*) or update the lines
+   "data_file  <- "citibike.RData""
+   "recon_file <- "ReconData.RData"" manually.
 
 By default the saved SARIMA results in `ReconData.RData` are used, so the slow model
 fitting is skipped. To refit the models yourself, set `run_sarima <- TRUE` at the top
