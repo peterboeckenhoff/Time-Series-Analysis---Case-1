@@ -1,3 +1,4 @@
+
 # Citi Bike Forecast Reconciliation
 
 1. Put `citibike_reconciliation.R`, `citibike.RData` and `ReconData.RData` in one folder.
@@ -14,7 +15,7 @@ install.packages(c("forecast", "FoReco", "FoRecoML", "ggplot2",
 
 By default the saved SARIMA results in `ReconData.RData` are used, so the slow model
 fitting is skipped. To refit the models yourself, set `run_sarima <- TRUE` at the top
-of the script (takes 5 minutes on my laptop).
+of the script (takes about 15 minutes on my laptop).
 
 Note: To reduce complexity and running time, the same SARIMA(2,0,3)(2,0,2)[168] is
 used for all 9 series.
