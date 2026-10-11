@@ -15,3 +15,5 @@ install.packages(c("tidyr", "ggplot2"))
    (*Ctrl/Cmd + Alt + R*).
 
 The plots appear one after another in the *Plots* pane.
+
+`<ExampleSeasonalUR>.R` runs the UR tests for an example time series and generates the plots used in the presentation.
