@@ -6,9 +6,7 @@
 
 2. Install the required packages:
 
-```r
 install.packages(c("tidyr", "ggplot2", "dplyr", "forecast"))
-```
 
 3. In RStudio, open the script and ensure that the dataset is loaded and the training and test datasets are defined. Run the script from top to bottom.
 
