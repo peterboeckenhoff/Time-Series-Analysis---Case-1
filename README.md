@@ -34,9 +34,9 @@ Each branch represents one analytical topic of the case study. This approach hel
 A natural progression is:
 
 - `Data-Exploration` → understand the data and identify patterns
-- `Exponential-Smoothing-Model` → test baseline forecasting approaches
-- `ARIMA-and-SARIMA` → model autocorrelation and seasonality
 - `Seasonal-Unit-Root-test` → assess stationarity and seasonal dynamics
+- `ARIMA-and-SARIMA` → model autocorrelation and seasonality
+- `Exponential-Smoothing-Model` → test baseline forecasting approaches
 - `Forecast-Reconciliation` → combine or reconcile forecast outputs
 
 ## Notes
