@@ -1,9 +1,9 @@
 # Citi Bike – Data Exploration
 
-`<DataExploration>.R` creates the exploratory plots used in the presentation
+`DataExploration.R` creates the exploratory plots used in the presentation
 (demand over time, by hour, by weekday, by month and by area). It does not fit any models.
 
-1. Put `<DataExploration>.R` and `citibike.RData` in one folder.
+1. Put `DataExploration.R` and `citibike.RData` in one folder.
 2. Install the packages:
 
 ```r
@@ -21,4 +21,4 @@ install.packages(c("tidyr", "ggplot2"))
 
 The plots appear one after another in the *Plots* pane.
 
-`<ExampleSeasonalUR>.R` runs the UR tests for an example time series and generates the plots used in the presentation.
+`ExampleSeasonalUR.R` runs the UR tests for an example time series and generates the plots used in the presentation.
