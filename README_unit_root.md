@@ -12,7 +12,12 @@ install.packages(c("bootUR", "uroot", "forecast", "ggplot2"))
 
 3. In RStudio, open the script, set the working directory to that folder
    (*Session > Set Working Directory > To Source File Location*) and run everything
-   (*Ctrl/Cmd + Alt + R*).
+   (*Ctrl/Cmd + Alt + R*) or update the lines
+   ```r
+   "data_file  <- "citibike.RData"
+   "recon_file <- "ReconData.RData"
+   ```
+   manually.
 
 The bootstrapped HEGY tests are slow. To speed them up, reduce
 `nb_daily` and `nb_weekly` at the top of the script.
