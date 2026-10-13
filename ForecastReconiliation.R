@@ -171,7 +171,7 @@ r2_ml <- 1 - colSums((b_ml - val_hat %*% t(G_ml))^2) /
   colSums(scale(b_ml, scale = FALSE)^2)
 
 # Reorder columns to y1 ... y9
-G_bu <- G_bu[, ord]; G_ls <- G_ls[, ord]; G_ml <- G_ml[, ord]
+#G_bu <- G_bu[, ord]; G_ls <- G_ls[, ord]; G_ml <- G_ml[, ord]
 
 cat("\n=== G bottom-up ===\n");                   print(round(G_bu, 3))
 cat("\n=== G WLS ===\n");                         print(round(G_ls, 3))
