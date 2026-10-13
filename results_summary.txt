@@ -1,0 +1,57 @@
+FINAL FORECAST RESULTS
+======================
+
+Rolling-window best model by RMSE: sarima_manual_D0
+Expanding-window best model by RMSE: sarima_manual_D0
+
+Rolling-window accuracy:
+            model                spec       MSE      RMSE       MAE     MAPE
+ sarima_manual_D0 (2,0,3)(2,0,2)[168]  304015.8  551.3763  333.1697 19.22238
+ sarima_manual_D1 (2,0,3)(2,1,2)[168]  332794.9  576.8838  350.8235 19.64222
+      sarima_auto (2,0,1)(0,1,0)[168]  523551.1  723.5683  348.1850 22.32568
+       arima_auto             (2,0,4) 2170980.6 1473.4248 1010.8080 76.21497
+     arima_manual             (2,0,3) 2435282.4 1560.5391 1096.5375 95.95469
+      MASE
+ 0.7031158
+ 0.7403723
+ 0.7348040
+ 2.1331927
+ 2.3141151
+
+Expanding-window accuracy:
+            model                spec       MSE      RMSE       MAE     MAPE
+ sarima_manual_D0 (2,0,3)(2,0,2)[168]  312356.3  558.8884  332.7443 20.02431
+ sarima_manual_D1 (2,0,3)(2,1,2)[168]  332444.5  576.5800  360.5188 20.29838
+      sarima_auto (2,0,1)(0,1,0)[168]  523638.6  723.6288  348.6826 22.46329
+       arima_auto             (2,0,4) 2215559.1 1488.4754 1013.8160 72.71904
+     arima_manual             (2,0,3) 2491717.8 1578.5176 1107.0528 92.71385
+      MASE
+ 0.7022181
+ 0.7608330
+ 0.7358541
+ 2.1395408
+ 2.3363063
+
+MCS membership (ARIMA/SARIMA models only):
+           analysis
+    rolling_squared
+   rolling_absolute
+  expanding_squared
+ expanding_absolute
+                                                             models_in_MCS
+ arima_manual, arima_auto, sarima_manual_D1, sarima_auto, sarima_manual_D0
+ arima_manual, arima_auto, sarima_manual_D1, sarima_auto, sarima_manual_D0
+ arima_manual, arima_auto, sarima_auto, sarima_manual_D1, sarima_manual_D0
+ arima_manual, arima_auto, sarima_manual_D1, sarima_auto, sarima_manual_D0
+
+MCS membership (including ETS):
+           analysis
+    rolling_squared
+   rolling_absolute
+  expanding_squared
+ expanding_absolute
+                                                                  models_in_MCS
+ arima_manual, arima_auto, ETS, sarima_manual_D1, sarima_auto, sarima_manual_D0
+ arima_manual, arima_auto, ETS, sarima_manual_D1, sarima_auto, sarima_manual_D0
+ arima_manual, arima_auto, ETS, sarima_auto, sarima_manual_D1, sarima_manual_D0
+ arima_manual, arima_auto, ETS, sarima_manual_D1, sarima_auto, sarima_manual_D0

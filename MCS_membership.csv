@@ -1,0 +1,5 @@
+"analysis","models_in_MCS"
+"rolling_squared","arima_manual, arima_auto, sarima_manual_D1, sarima_auto, sarima_manual_D0"
+"rolling_absolute","arima_manual, arima_auto, sarima_manual_D1, sarima_auto, sarima_manual_D0"
+"expanding_squared","arima_manual, arima_auto, sarima_auto, sarima_manual_D1, sarima_manual_D0"
+"expanding_absolute","arima_manual, arima_auto, sarima_manual_D1, sarima_auto, sarima_manual_D0"
