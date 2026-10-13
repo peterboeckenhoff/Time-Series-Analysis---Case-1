@@ -65,3 +65,6 @@ Plots (ACF/PACF, residual checks, RMSE per horizon) are shown in R and are not s
 - **Estimation method in the forecast loops.** The rolling and expanding window models are refitted with `method = "CSS"` for speed. A slower CSS-ML check can be switched on with `RUN_SANITY_CHECK <- TRUE`.
 - **Models with identical forecasts.** If two models turn out to give identical forecasts, the pairwise DM tests and the first MCS drop the duplicate, and the console reports this.
 - **Reproducibility.** The MCS bootstrap uses fixed seeds. The grid search caches depend on the selected p and q, so changing the training sample or the ranges requires deleting the cache files.
+
+
+WARNING THIS CODE MIGHT TAKE A WHILE TO RUN, AT LEAST ONE HOUR
