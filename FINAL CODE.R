@@ -8,7 +8,7 @@
 library(forecast)  
 
 ## ---- 0b. Working directory -----------------------------------
-## One working directory for everything (data, caches, ETS csv files, outputs)
+## One working directory for everything 
 setwd("C:/Users/janne/OneDrive/Documents/Time Series Analytics/Case")
 
 ## All outputs that are handed in are saved in this one folder
@@ -419,7 +419,7 @@ legend("topleft", legend = models, col = colors, lwd = 2, cex = 0.7)
 
 
 ## ---- 12. Packages ----------------------------------------------
-## dm.test() is in the forecast package (already loaded).
+## dm.test() is in the forecast package .
 ## MCS: package "MCS" (Bernardi and Catania), function MCSprocedure().
 if (!requireNamespace("MCS", quietly = TRUE)) install.packages("MCS")
 library(MCS)
@@ -705,7 +705,6 @@ saveRDS(results_all, file = file.path(results_dir, "all_forecast_results.rds"))
 ##   Diebold-Mariano tests and MCS including ETS
 ## ============================================================
 ## Uses the forecasts that are already in memory from Part B
-## (no need to reload all_forecast_results.rds).
 ## The ETS forecasts come from two csv files with the columns
 ## day, horizon, actual, ets_forecast.
 
@@ -744,7 +743,7 @@ ets_expanding <- read_ets("expanding_ets_mcs.csv")
 
 
 ## ---- 19. DM tests: each model against ETS ------------------------
-## (named run_dm_ets so it does not overwrite run_dm from section 14)
+
 run_dm_ets <- function(fc, actuals, ets, power) {
   
   my_actuals <- as.vector(t(as.matrix(actuals)))
@@ -836,8 +835,7 @@ write.csv(DM_expanding_absolute, file.path(results_dir, "DM_ETS_expanding_absolu
 
 
 ## ---- 20. MCS including the ETS benchmark -------------------------
-## (named run_mcs_ets so it does not clash with the MCS objects from
-## section 15; the settings below are those of the original MCS script)
+
 run_mcs_ets <- function(fc, actuals, ets, window_name) {
   
   actuals <- as.matrix(actuals)
