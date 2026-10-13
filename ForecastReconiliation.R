@@ -344,6 +344,32 @@ print(
     theme(legend.position = "bottom")
 )
 
+                           
+# Mean Absolute Error
+mae <- function(f, a) colMeans(abs(f - a))
+# MAE over the test week
+mae_tbl <- rbind(
+  Base = mae(yhat, test_all),
+  BU   = mae(bu_mat, test_all),
+  WLS  = mae(ls_mat, test_all),
+  ML   = mae(ml_mat, test_all)
+)[, ord]
+
+# Ratio relative to the Base model
+mae_ratio <- sweep(
+  mae_tbl[-1, ],
+  2,
+  mae_tbl["Base", ],
+  "/"
+)
+
+cat("\n=== MAE ===\n")
+print(round(mae_tbl, 1))
+
+cat("\n=== MAE ratio ===\n")
+print(round(mae_ratio, 3))
+
+                           
 # ---- Total runtime ----
 cat("\nTOTAL runtime:",
     round(as.numeric(Sys.time() - t_total, units = "secs"), 1), "s\n")
