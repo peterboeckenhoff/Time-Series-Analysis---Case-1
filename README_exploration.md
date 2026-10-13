@@ -12,7 +12,12 @@ install.packages(c("tidyr", "ggplot2"))
 
 3. In RStudio, open the script, set the working directory to that folder
    (*Session > Set Working Directory > To Source File Location*) and run everything
-   (*Ctrl/Cmd + Alt + R*).
+   (*Ctrl/Cmd + Alt + R*) or update the lines
+   ```r
+   "data_file  <- "citibike.RData"
+   "recon_file <- "ReconData.RData"
+   ```
+   manually.
 
 The plots appear one after another in the *Plots* pane.
 
